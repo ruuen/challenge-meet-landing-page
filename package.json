@@ -1,0 +1,16 @@
+{
+  "name": "meet-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch --no-source-map scss/main.scss site_dir/main.css",
+    "build": "sass --no-source-map --style=compressed scss/main.scss site_dir/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

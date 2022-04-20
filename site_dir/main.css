@@ -1,0 +1,239 @@
+/* red-hat-display-500 - latin */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("./fonts/red-hat-display-v11-latin-500.woff2") format("woff2"), url("./fonts/red-hat-display-v11-latin-500.woff") format("woff");
+}
+/* red-hat-display-900 - latin */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("./fonts/red-hat-display-v11-latin-900.woff2") format("woff2"), url("./fonts/red-hat-display-v11-latin-900.woff") format("woff");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.header {
+  padding: 3em 3em 1em 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  padding: 2em 0 4em 0;
+  overflow: hidden;
+}
+
+.hero__bg {
+  width: 110%;
+  margin-left: -5%;
+}
+
+.hero__heading {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1.35em 0 0 0;
+  color: #28283d;
+}
+
+.hero__copy {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  padding: 1.25em 1.25em 2em 1.25em;
+  text-align: center;
+  color: #87879d;
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  border-radius: 29px;
+  padding: 1.1em 2.25em;
+  background: #4d96a9;
+  text-decoration: none;
+  color: #fafafa;
+  font-weight: 900;
+  margin: 0 auto;
+}
+.btn__faq {
+  background: #855fb1;
+  padding: 1em 2em;
+  margin: 1em auto 0 auto;
+}
+
+.section-marker {
+  padding: 1em 1.1em;
+  margin: 0 auto;
+  border-radius: 50%;
+  outline: 1px solid rgba(135, 135, 157, 0.3);
+  color: #87879d;
+  background: #fafafa;
+  width: fit-content;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  position: relative;
+  z-index: 2;
+  margin-top: 5em;
+  user-select: none;
+}
+.section-marker::after {
+  content: "";
+  position: absolute;
+  background: rgba(135, 135, 157, 0.3);
+  width: 1px;
+  height: 150%;
+  top: -150%;
+  left: 50%;
+  z-index: 2;
+}
+
+.meetings {
+  padding: 0 1.5em;
+}
+
+.meetings__img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 1.5em;
+  justify-items: center;
+  align-items: center;
+  margin: 5em 0 0 0;
+}
+
+.meetings__img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.meetings__content {
+  padding: 3.5em 0 0 0;
+  text-align: center;
+}
+
+.meetings__heading-group {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.meetings__heading {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 900;
+}
+.meetings__heading--small {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  color: #4d96a9;
+  padding: 0 0 1.5em 0;
+}
+
+.meetings__copy {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #87879d;
+  padding: 1.5em 0 4em 0;
+}
+
+.footer {
+  margin-top: -1.75em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6em 2em 5em 2em;
+  overflow: hidden;
+  text-align: center;
+}
+.footer .btn__download {
+  margin: 2em 0 0 0;
+  background: #855fb1;
+}
+
+.footer__bg-image {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.1;
+}
+
+.footer__bg-gradient {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4d96a9;
+}
+
+.footer__heading,
+.footer__copy,
+.btn__download {
+  position: relative;
+  z-index: 2;
+}
+
+.footer__heading {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #fafafa;
+}
+
+.footer__copy {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #fafafa;
+  padding: 1em 0 0 0;
+}
