@@ -179,6 +179,7 @@ body {
   font-size: 2rem;
   line-height: 2.25rem;
   font-weight: 900;
+  color: #28283d;
 }
 .meetings__heading--small {
   text-transform: uppercase;
