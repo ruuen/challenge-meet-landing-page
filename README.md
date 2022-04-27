@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/meet-landing-page-using-scss-and-bem-rkyIL5ISq)
 - Live Site URL: [Netlify](https://rd-challenge-meet-page.netlify.app/)
 
 ## My process
