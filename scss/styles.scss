@@ -1,5 +1,9 @@
 @use "variables" as var;
 
+body {
+  background: var.$clr-white;
+}
+
 .header {
   padding: 3em 3em 1em 3em;
   display: flex;
@@ -10,6 +14,11 @@
 .hero {
   padding: 2em 0 4em 0;
   overflow: hidden;
+}
+
+.hero__left-bg,
+.hero__right-bg {
+  display: none;
 }
 
 .hero__bg {
@@ -50,6 +59,10 @@
     background: var.$clr-purple;
     padding: 1em 2em;
     margin: 1em auto 0 auto;
+  }
+
+  &__download--accent {
+    color: var.$clr-cyan;
   }
 }
 
@@ -135,16 +148,12 @@
 .footer {
   margin-top: -1.75em;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 6em 2em 4em 2em;
   overflow: hidden;
   text-align: center;
 
   .btn__download {
-    margin: 2em 0 0 0;
+    margin: 2em auto 0 auto;
     background: var.$clr-purple;
   }
 }

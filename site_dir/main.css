@@ -54,6 +54,10 @@ h6 {
   width: 1px;
 }
 
+body {
+  background: #fafafa;
+}
+
 .header {
   padding: 3em 3em 1em 3em;
   display: flex;
@@ -64,6 +68,11 @@ h6 {
 .hero {
   padding: 2em 0 4em 0;
   overflow: hidden;
+}
+
+.hero__left-bg,
+.hero__right-bg {
+  display: none;
 }
 
 .hero__bg {
@@ -104,6 +113,9 @@ h6 {
   background: #855fb1;
   padding: 1em 2em;
   margin: 1em auto 0 auto;
+}
+.btn__download--accent {
+  color: #8fe3f9;
 }
 
 .section-marker {
@@ -186,16 +198,12 @@ h6 {
 .footer {
   margin-top: -1.75em;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 6em 2em 4em 2em;
   overflow: hidden;
   text-align: center;
 }
 .footer .btn__download {
-  margin: 2em 0 0 0;
+  margin: 2em auto 0 auto;
   background: #855fb1;
 }
 
@@ -294,9 +302,111 @@ h6 {
     font-size: 2.5rem;
     line-height: 2.75rem;
     max-width: 60%;
+    margin: 0 auto;
   }
 
   .footer__copy {
     padding: 1.5em 4em 0.5em 4em;
+  }
+}
+@media (min-width: 1400px) {
+  .header {
+    padding: 5em 3em 1em 3em;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0 8em 0;
+  }
+
+  .hero__bg {
+    display: none;
+  }
+
+  .hero__left-bg,
+.hero__right-bg {
+    display: block;
+  }
+
+  .hero__left-bg {
+    margin-left: -2em;
+  }
+
+  .hero__right-bg {
+    margin-right: -2em;
+    transform: translateY(3.5em);
+  }
+
+  .hero__content {
+    padding: 0 4em;
+  }
+
+  .hero__heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .hero__copy {
+    font-size: 1.125rem;
+  }
+
+  .btn__download:hover {
+    background: #71c0d4;
+  }
+  .btn__faq:hover {
+    background: #b18bdd;
+  }
+
+  .meetings {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .meetings__img-grid {
+    margin: 4em 0 0 0;
+  }
+
+  .meetings__content {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 4.5em 0 3em 0;
+  }
+
+  .meetings__copy {
+    font-size: 1.125rem;
+    padding: 1.5em 6em;
+  }
+
+  .footer {
+    text-align: left;
+    padding: 7em 2em;
+  }
+  .footer .btn__download {
+    margin: 0;
+  }
+  .footer .btn__download:hover {
+    background: #b18bdd;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 85rem;
+    margin: 0 auto;
+  }
+
+  .footer__heading {
+    max-width: 21.5rem;
+    margin: 0;
+  }
+
+  .footer__copy {
+    max-width: 21.5rem;
+    padding: 0;
   }
 }

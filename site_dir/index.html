@@ -17,16 +17,18 @@
     <main class="container">
       <div class="hero">
         <img src="./images/image-hero-tablet.png" alt="" class="hero__bg" />
+        <img src="./images/image-hero-left.png" alt="" class="hero__left-bg" />
         <section class="hero__content">
           <h1 class="hero__heading">Group Chat for Everyone</h1>
           <p class="hero__copy">
             Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
           </p>
           <div class="hero__btn-group">
-            <a href="#" class="btn btn__download">Download v1.3</a>
+            <a href="#" class="btn btn__download">Download <span class="btn__download--accent">v1.3</span></a>
             <a href="#" class="btn btn__faq">What is it?</a>
           </div>
         </section>
+        <img src="./images/image-hero-right.png" alt="" class="hero__right-bg" />
       </div>
 
       <div class="meetings">
@@ -52,16 +54,19 @@
     </main>
 
     <footer class="footer">
+      <div class="footer__content">
+        <h3 class="footer__heading">Experience more together</h3>
+        <p class="footer__copy">
+          Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+        </p>
+        <a href="#" class="btn btn__download">Download <span class="btn__download--accent">v1.3</span></a>
+      </div>
       <picture>
+        <source media="(min-width: 1400px)" srcset="./images/image-footer-desktop.jpg" />
         <source media="(min-width: 700px)" srcset="./images/image-footer-tablet.jpg" />
-        <img src="./images/image-footer-mobile.jpg" alt="" srcset="" class="footer__bg-image" />
+        <img src="./images/image-footer-mobile.jpg" alt="" class="footer__bg-image" />
       </picture>
       <div class="footer__bg-gradient"></div>
-      <h3 class="footer__heading">Experience more together</h3>
-      <p class="footer__copy">
-        Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-      </p>
-      <a href="#" class="btn btn__download">Download v1.3</a>
     </footer>
   </body>
 </html>
