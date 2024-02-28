@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/meet-landing-page-using-scss-and-bem-rkyIL5ISq)
-- Live Site URL: [Netlify](https://rd-challenge-meet-page.netlify.app/)
+- Live Site URL: [Cloudflare Pages](https://mbr-challenge-meet-landing-page.pages.dev/)
 
 ## My process
 
@@ -52,5 +52,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@ruuendigital](https://www.frontendmentor.io/profile/ruuendigital)
+- Frontend Mentor - [@ruuen](https://www.frontendmentor.io/profile/ruuen)
 - Twitter - [@maxruuen](https://www.twitter.com/maxruuen)
